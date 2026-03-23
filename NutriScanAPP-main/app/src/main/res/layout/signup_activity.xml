@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4CAF50"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Judul Sign Up -->
+        <TextView
+            android:id="@+id/signUpTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Nama -->
+        <EditText
+            android:id="@+id/editNama"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Nama"
+            android:background="@android:drawable/editbox_background_normal"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Usia -->
+        <EditText
+            android:id="@+id/editUsia"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Usia"
+            android:inputType="number"
+            android:background="@android:drawable/editbox_background_normal"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Tinggi Badan -->
+        <EditText
+            android:id="@+id/editTinggi"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Tinggi Badan (cm)"
+            android:inputType="numberDecimal"
+            android:background="@android:drawable/editbox_background_normal"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Berat Badan -->
+        <EditText
+            android:id="@+id/editBerat"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Berat Badan (kg)"
+            android:inputType="numberDecimal"
+            android:background="@android:drawable/editbox_background_normal"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Alergi -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alergi (jika ada):"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <Spinner
+            android:id="@+id/spinnerAlergi"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/passwordField"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:background="@android:drawable/editbox_background_normal"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Tombol Sign Up -->
+        <Button
+            android:id="@+id/btnMulai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2E7D32"
+            android:text="Sign Up"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Link ke Login -->
+        <TextView
+            android:id="@+id/txtToLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sudah punya akun? Login"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+</ScrollView>

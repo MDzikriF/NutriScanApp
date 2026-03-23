@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <!-- Overlay -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Logo -->
+            <TextView
+                android:id="@+id/logoNutriscan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="16dp"
+                android:text="NutriScan"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/loginTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                android:text="Login"
+                android:textColor="@android:color/white"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <!-- Form -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="239dp"
+                android:layout_below="@id/loginTitle"
+                android:layout_marginTop="92dp"
+                android:orientation="vertical">
+
+                <!-- Nama -->
+                <EditText
+                    android:id="@+id/namaField"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="Nama"
+                    android:padding="12dp"
+                    android:textColor="#000000" />
+
+                <!-- Password -->
+                <EditText
+                    android:id="@+id/passwordField"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="12dp"
+                    android:textColor="#000000" />
+
+                <!-- Tombol Login -->
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="353dp"
+                    android:layout_height="52dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="24dp"
+                    android:backgroundTint="#2E7D32"
+                    android:text="Login"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+                <!-- Link ke Sign Up -->
+                <TextView
+                    android:id="@+id/txtToSignUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:text="Belum punya akun? Sign Up"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C8FAD4">
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="188dp"
+        android:layout_height="127dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/nutriscanlogo" />
+
+    <TextView
+        android:id="@+id/txtGreeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Halo, User Selamat Datang"
+        android:textStyle="bold"
+        android:textSize="19sp"
+        android:textColor="#2E2E2E"
+        android:layout_below="@id/logoImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+    <ImageView
+        android:id="@+id/btnChatAI"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/txtGreeting"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/chatai"
+        android:background="@drawable/btn_white_rounded_border"
+        android:scaleType="fitCenter"
+        android:padding="4dp" />
+
+    <ImageView
+        android:id="@+id/btnScan"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/btnChatAI"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/scan"
+        android:background="@drawable/btn_white_rounded_border"
+        android:scaleType="fitCenter"
+        android:padding="4dp" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="280dp"
+        android:layout_height="52dp"
+        android:layout_below="@id/btnScan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Logout"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:backgroundTint="#2E7D32" />
+
+    <!-- Tombol Scan Pusat - DILUAR bottomNav -->
+    <LinearLayout
+        android:id="@+id/layoutBottomScan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:translationY="-32dp"
+        android:gravity="center"
+        android:elevation="8dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:id="@+id/btnBottomScan"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:background="@drawable/center_button_bg"
+            android:padding="10dp"
+            android:src="@drawable/scanmenu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Scan Makanan"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <!-- Bottom Navigation -->
+    <RelativeLayout
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="#1B5E20">
+
+        <LinearLayout
+            android:id="@+id/layoutProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="40dp"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/btnProfile"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:src="@drawable/profile" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+            <Button
+                android:id="@+id/btnToProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buka Profil"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="40dp"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/btnHistory"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/history" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="History"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

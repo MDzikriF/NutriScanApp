@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chatAiLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".ChatAiActivity">
+
+    <!-- Tombol Home -->
+
+    <!-- Logo NutriScan -->
+
+    <!-- Gambar Chat AI -->
+
+    <ImageView
+        android:id="@+id/homeIcon"
+        android:layout_width="41dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="Home"
+        android:src="@drawable/home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/nutriscanLogo"
+        android:layout_width="275dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="NutriScan Logo"
+        android:scaleType="fitCenter"
+        android:src="@drawable/nutriscanlogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/homeIcon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/chatAiLogo"
+        android:layout_width="166dp"
+        android:layout_height="201dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="Chat AI Logo"
+        android:src="@drawable/chatai"
+        app:layout_constraintTop_toBottomOf="@id/nutriscanLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Balon sapaan AI -->
+    <TextView
+        android:id="@+id/aiGreeting"
+        android:layout_width="385dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bubble_ai"
+        android:padding="12dp"
+        android:text="Hi, Tyo ada yang ingin di tanyakan mengenai kesehatan atau alergi?"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chatAiLogo" />
+
+    <!-- Input chat -->
+    <EditText
+        android:id="@+id/messageInput"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/chat_input_bg"
+        android:hint="Tanya AI......."
+        android:padding="12dp"
+        android:textColorHint="#999999"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/sendButton" />
+
+    <!-- Tombol kirim -->
+    <ImageButton
+        android:id="@+id/sendButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Kirim"
+        android:src="@drawable/kirimai"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

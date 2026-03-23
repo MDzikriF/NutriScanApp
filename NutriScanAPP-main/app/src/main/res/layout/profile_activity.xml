@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C2FDCD"
+    tools:context=".ProfileActivity">
+
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="175dp"
+        android:layout_height="64dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:contentDescription="Logo NutriScan"
+        android:src="@drawable/nutriscanlogo" />
+
+    <ImageView
+        android:id="@+id/imgUser"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/profile"
+        android:layout_below="@id/imgLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:contentDescription="Icon User" />
+
+
+    <TextView
+        android:id="@+id/tvNamaUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama User"
+        android:textSize="22sp"
+        android:textColor="#004D25"
+        android:textStyle="bold"
+        android:layout_below="@id/imgUser"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <ScrollView
+        android:id="@+id/formScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvNamaUser"
+        android:layout_above="@id/btnLogout"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:id="@+id/formLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="32dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Usia"
+                android:textColor="#004D25"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/etUsia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:padding="12dp"
+                android:textColor="@android:color/black"
+                android:inputType="number"
+                android:focusable="false"
+                android:clickable="false"/> <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Alergi"
+            android:textColor="#004D25"
+            android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/etAlergi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:padding="12dp"
+                android:textColor="@android:color/black"
+                android:focusable="false"
+                android:clickable="false"/> <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Tinggi Badan (cm)"
+            android:textColor="#004D25"
+            android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/etTinggi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:padding="12dp"
+                android:textColor="@android:color/black"
+                android:inputType="number"
+                android:focusable="false"
+                android:clickable="false"/> <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Berat Badan (kg)"
+            android:textColor="#004D25"
+            android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/etBerat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:padding="12dp"
+                android:textColor="@android:color/black"
+                android:inputType="number"
+                android:focusable="false"
+                android:clickable="false"/> </LinearLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="280dp"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:text="Logout"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:backgroundTint="#2E7D32" />
+
+</RelativeLayout>
